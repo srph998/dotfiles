@@ -1,0 +1,37 @@
+;; stumpwm rc file
+;; by @netseraph
+;; http://seraph.earth
+
+;; init
+(set-font "-*-haxor-narrow-r-normal-*-18-*-*-*-*-*-*-*")
+
+;; input bar
+(set-fg-color "#AAAAAA")
+(set-bg-color "#000000")
+(set-msg-border-width 0)
+(set-border-color "#AAAAAA")
+(setf *message-window-gravity* :center
+	*input-window-gravity* :center)
+
+;; modeline
+(setf *group-format* "%s%t")
+(setf *window-format* "%n%s%c")
+(setf *mode-line-timeout* 1)
+
+(setf *time-modeline-string* "%a %d/%m %H:%M:%S")
+
+(setf *screen-mode-line-format*
+	(list "%g %W ^> "
+		"%d" ))
+
+(setf *mode-line-border-width* 0)
+(setf *mode-line-background-color* "#000000")
+(setf *mode-line-foreground-color* "#AAAAAA")
+
+;; windows
+(setf *window-border-style* :none)
+(setf *maxsize-border-width* 0)
+(setf *normal-border-width* 0)
+(set-focus-color "#AAAAAA")
+(set-unfocus-color "#0000AA")
+(set-win-bg-color "#0000AA")
